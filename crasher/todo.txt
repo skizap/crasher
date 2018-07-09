@@ -1,0 +1,5 @@
+﻿TODO:
+
+-Proxys -> Internal proxy scraper
+-Mirror attack using webserver
+-Adding working botnet
