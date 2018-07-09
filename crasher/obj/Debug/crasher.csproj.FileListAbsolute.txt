@@ -1,0 +1,7 @@
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\bin\Debug\crasher.exe.config
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\bin\Debug\crasher.exe
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\bin\Debug\crasher.pdb
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\obj\Debug\crasher.csprojAssemblyReference.cache
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\obj\Debug\crasher.csproj.CoreCompileInputs.cache
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\obj\Debug\crasher.exe
+C:\Users\luca6\OneDrive\Documenti\Visual Studio 2017\Projects\crasher\crasher\obj\Debug\crasher.pdb
